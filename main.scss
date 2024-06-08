@@ -1,7 +1,7 @@
 /* Importing the partials */
 
 // Colours
-$bg-black: #000;
+$bg-purple: #fcd1ff;
 $bg-white: #fff;
 
 // Fonts
@@ -15,7 +15,7 @@ $text-reg: 25px;
 $text-sm: 18px;
 
 body {
-    background-color: $bg-black;
+    background-color: $bg-purple;
     font-family: $font-arial;
     font-size: $text-reg;
     margin: 0;
@@ -29,12 +29,12 @@ h1 {
 }
 
 div#black-box{
-    background-color: $bg-black;
+    background-color: $bg-purple;
     font-size: $text-sm;
     color: $bg-white;
 }
 
 .black-flag {
-    background-color: $bg-black;
+    background-color: $bg-purple;
     color: $bg-white;
 }
