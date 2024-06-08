@@ -3,6 +3,7 @@
 // Colours
 $bg-purple: #fcd1ff;
 $bg-white: #fff;
+$bg-babyblue: #bbdeff
 
 // Fonts
 $font-arial: Arial, Helvetica, sans-serif;
@@ -13,6 +14,9 @@ $text-lg: 66px;
 $text-md: 30px;
 $text-reg: 25px;
 $text-sm: 18px;
+
+// Border Radius
+$radius-md: 15px;
 
 body {
     background-color: $bg-purple;
@@ -37,4 +41,9 @@ div#black-box{
 .black-flag {
     background-color: $bg-purple;
     color: $bg-white;
+}
+
+@mixin btn {
+    background-color: $bg-babyblue;
+    border-radius: $radius-md;
 }
