@@ -25,15 +25,34 @@ div#black-box {
 }
 
 .btn {
+  display: inline-block;
   background-color: #bbdeff;
   border-radius: 8px;
   color: #fff;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 14px;
   padding: 14px 50px;
   text-decoration: none;
+  border: none;
 }
 .btn:hover {
+  background-color: #022D68;
+}
+
+#submit {
+  display: inline-block;
+  background-color: #bbdeff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 14px;
+  padding: 14px 50px;
+  text-decoration: none;
+  border: none;
+}
+#submit:hover {
   background-color: #022D68;
 }
 

@@ -46,13 +46,16 @@ div#black-box{
 }
 
 @mixin btn {
+    display:inline-block;
     background-color: $bg-babyblue;
     border-radius: $radius-md;
     color: $bg-white;
     font-size: $text-sm;
     font-family: $font-arial;
+    margin-bottom: 14px;
     padding: 14px 50px;
     text-decoration: none;
+    border: none;
 
     &:hover {
         background-color: $bg-darkblue;
@@ -63,3 +66,7 @@ div#black-box{
     @include btn;
 }
 
+#submit {
+    @include btn;
+
+}
