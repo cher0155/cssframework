@@ -1,0 +1,35 @@
+$bg-black: #000;
+$bg-white: #fff;
+
+$font-arial: Arial, Helvetica, sans-serif;
+$font-times: 'Times New Roman', Times, serif;
+
+$text-lg: 66px;
+$text-md: 30px;
+$text-reg: 25px;
+$text-sm: 18px;
+
+body {
+    background-color: $bg-black;
+    font-family: $font-arial;
+    font-size: $text-reg;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: $text-lg;
+    font-weight: 900;
+    font-family: $font-times;
+}
+
+div#black-box{
+    background-color: $bg-black;
+    font-size: $text-sm;
+    color: $bg-white;
+}
+
+.black-flag {
+    background-color: $bg-black;
+    color: $bg-white;
+}

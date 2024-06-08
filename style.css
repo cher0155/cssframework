@@ -1,0 +1,26 @@
+body {
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 66px;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+}
+
+div#black-box {
+  background-color: #000;
+  font-size: 18px;
+  color: #fff;
+}
+
+.black-flag {
+  background-color: #000;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
