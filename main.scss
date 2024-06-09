@@ -1,8 +1,9 @@
-/* Importing the partials */
+/* Import the partials */
 @use 'colours';
 @use 'fonts';
 @use 'border';
 
+/* General body styles */
 body {
     background-color: colours.$bg-lightpurple;
     font-family: fonts.$font-arial;
@@ -11,25 +12,38 @@ body {
     padding: 60px;
 }
 
+/* Heading styles */
 h1 {
     font-size: fonts.$text-lg;
     font-weight: 900;
     font-family: fonts.$font-times;
 }
 
-div#black-box{
-    background-color: colours.$bg-lightpurple;
+h2 {
+    font-size: fonts.$text-lg;
+}
+
+h3 {
+    font-size: fonts.$text-lg;
+}
+
+h4 {
+    font-size: fonts.$text-lg;
+}
+
+h5 {
+    font-size: fonts.$text-lg;
+}
+
+/* Paragraph styles */
+p {
     font-size: fonts.$text-sm;
-    color: colours.$bg-white;
+    margin-bottom: 16px;
 }
 
-.black-flag {
-    background-color: colours.$bg-lightpurple;
-    color: colours.$bg-white;
-}
-
+/* Button mixin */
 @mixin btn {
-    display:inline-block;
+    display: inline-block;
     background-color: colours.$bg-babyblue;
     border-radius: border.$radius-md;
     color: colours.$bg-white;
@@ -45,11 +59,45 @@ div#black-box{
     }
 }
 
+/* Button class */
 .btn {
     @include btn;
 }
 
+/* Specific button ID */
 #submit {
     @include btn;
+}
 
+/* Additional styles for elements like tables, lists, etc. */
+ul, ol {
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+hr {
+    margin: 24px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 16px 0;
+    padding: 8px 16px;
+    border-left: 4px solid #ccc;
 }
