@@ -4,3 +4,12 @@ StylaCSS is a modern, lightweight CSS framework designed to simplify and enhance
 ## installation instructions
  download style.css and use in your html file 
  example: ` <link rel="stylesheet" href="style.css">`
+
+- Container Class: The `.container` class is used to center the content and provide consistent padding.
+- Text Alignment: The `text-center` class is used to center the heading.
+- Button Classes: Classes such as `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-success`, and `.btn-danger` are used to style buttons with different visual cues.
+- Form Button: The submit button inside the form is styled with the `.btn` and `.btn-primary` classes.
+- Table Elements: The table is styled with default table elements; you can customize it further in your CSS framework.
+- Blockquote: The `blockquote` element is styled to stand out from the rest of the text.
+
+This example demonstrates the use of the StylaCSS framework's classes to style various HTML elements consistently and appealingly.
