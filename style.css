@@ -1,6 +1,6 @@
 /* Importing the partials */
 body {
-  background-color: #fcd1ff;
+  background-color: #e248ed;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   margin: 0;
@@ -14,13 +14,13 @@ h1 {
 }
 
 div#black-box {
-  background-color: #fcd1ff;
+  background-color: #e248ed;
   font-size: 18px;
   color: #fff;
 }
 
 .black-flag {
-  background-color: #fcd1ff;
+  background-color: #e248ed;
   color: #fff;
 }
 

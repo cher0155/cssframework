@@ -1,24 +1,5 @@
 /* Importing the partials */
-
-// Colours
-$bg-purple: #fab2ff;
-$bg-white: #fff;
-$bg-babyblue: #bbdeff;
-$bg-black: #000;
-$bg-darkblue: #022D68;
-
-// Fonts
-$font-arial: Arial, Helvetica, sans-serif;
-$font-times: 'Times New Roman', Times, serif;
-
-// Font Sizes
-$text-lg: 66px;
-$text-md: 30px;
-$text-reg: 25px;
-$text-sm: 18px;
-
-// Border Radius
-$radius-md: 8px;
+@use 'variables';
 
 body {
     background-color: variables.$bg-purple;
