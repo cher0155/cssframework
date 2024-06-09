@@ -1,45 +1,47 @@
 /* Importing the partials */
-@use 'variables';
+@use 'colours';
+@use 'fonts';
+@use 'border';
 
 body {
-    background-color: variables.$bg-purple;
-    font-family: variables.$font-arial;
-    font-size: variables.$text-reg;
+    background-color: colours.$bg-purple;
+    font-family: fonts.$font-arial;
+    font-size: fonts.$text-reg;
     margin: 0;
     padding: 60px;
 }
 
 h1 {
-    font-size: variables.$text-lg;
+    font-size: fonts.$text-lg;
     font-weight: 900;
-    font-family: variables.$font-times;
+    font-family: fonts.$font-times;
 }
 
 div#black-box{
-    background-color: variables.$bg-purple;
-    font-size: variables.$text-sm;
-    color: variables.$bg-white;
+    background-color: colours.$bg-purple;
+    font-size: fonts.$text-sm;
+    color: colours.$bg-white;
 }
 
 .black-flag {
-    background-color: variables.$bg-purple;
-    color: variables.$bg-white;
+    background-color: colours.$bg-purple;
+    color: colours.$bg-white;
 }
 
 @mixin btn {
     display:inline-block;
-    background-color: variables.$bg-babyblue;
-    border-radius: variables.$radius-md;
-    color: variables.$bg-white;
-    font-size: variables.$text-sm;
-    font-family: variables.$font-arial;
+    background-color: colours.$bg-babyblue;
+    border-radius: border.$radius-md;
+    color: colours.$bg-white;
+    font-size: fonts.$text-sm;
+    font-family: fonts.$font-arial;
     margin-bottom: 14px;
     padding: 14px 50px;
     text-decoration: none;
     border: none;
 
     &:hover {
-        background-color: variables.$bg-darkblue;
+        background-color: colours.$bg-darkblue;
     }
 }
 
