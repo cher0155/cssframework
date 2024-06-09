@@ -1,7 +1,7 @@
 /* Import the partials */
 @use 'colours';
 @use 'fonts';
-@use 'border';
+@use 'layouts';
 
 /* General body styles */
 body {
@@ -45,7 +45,7 @@ p {
 @mixin btn {
     display: inline-block;
     background-color: colours.$bg-babyblue;
-    border-radius: border.$radius-md;
+    border-radius: layouts.$radius-md;
     color: colours.$bg-white;
     font-size: fonts.$text-sm;
     font-family: fonts.$font-arial;
@@ -71,33 +71,60 @@ p {
 
 /* Additional styles for elements like tables, lists, etc. */
 ul, ol {
-    margin-bottom: 16px;
+    margin-bottom: layouts.$margin-btm;
+    font-size: fonts.$text-reg;
+    padding-left: layouts.$padding-left;
 }
+ul {
+    list-style-type: layouts.$circle-list;
+}
+
+ol {
+    list-style-type: layouts.$roman-list;
+}
+
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 16px;
+    border-collapse: layouts.$border-collapse;
+    margin-bottom: layouts.$margin-btm;
 }
 
 table, th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: layouts.$border-solid;
+    padding: layouts.$padding-small;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: colours.$bg-white;
 }
 
 hr {
-    margin: 24px 0;
-    border: none;
-    border-top: 1px solid #ccc;
+    margin: layouts.$margin-medium;
+    border: layouts.$border-dash;
 }
 
 blockquote {
-    font-style: italic;
-    margin: 16px 0;
-    padding: 8px 16px;
-    border-left: 4px solid #ccc;
+    font-family: fonts.$font-times;
+    margin: layouts.$margin-medium;
+    padding: layouts.$padding-medium;
+}
+
+.btn btn-primary {
+    background-color: colours.$bg-darkblue;
+    color: colours.$bg-white;
+}
+
+.btn btn-secondary {
+    background-color: colours.$bg-lightpurple;
+    color: colours.$bg-darkblue;
+}
+
+.btn btn-success {
+    background-color: colours.$bg-green;
+    color: colours.$bg-white;
+}
+.btn btn-danger {
+    background-color: colours.$bg-red;
+    color: colours.$bg-white;
 }
