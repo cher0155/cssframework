@@ -1,7 +1,7 @@
 /* Importing the partials */
 
 // Colours
-$bg-purple: #fcd1ff;
+$bg-purple: #fab2ff;
 $bg-white: #fff;
 $bg-babyblue: #bbdeff;
 $bg-black: #000;
@@ -21,44 +21,44 @@ $text-sm: 18px;
 $radius-md: 8px;
 
 body {
-    background-color: $bg-purple;
-    font-family: $font-arial;
-    font-size: $text-reg;
+    background-color: variables.$bg-purple;
+    font-family: variables.$font-arial;
+    font-size: variables.$text-reg;
     margin: 0;
     padding: 60px;
 }
 
 h1 {
-    font-size: $text-lg;
+    font-size: variables.$text-lg;
     font-weight: 900;
-    font-family: $font-times;
+    font-family: variables.$font-times;
 }
 
 div#black-box{
-    background-color: $bg-purple;
-    font-size: $text-sm;
-    color: $bg-white;
+    background-color: variables.$bg-purple;
+    font-size: variables.$text-sm;
+    color: variables.$bg-white;
 }
 
 .black-flag {
-    background-color: $bg-purple;
-    color: $bg-white;
+    background-color: variables.$bg-purple;
+    color: variables.$bg-white;
 }
 
 @mixin btn {
     display:inline-block;
-    background-color: $bg-babyblue;
-    border-radius: $radius-md;
-    color: $bg-white;
-    font-size: $text-sm;
-    font-family: $font-arial;
+    background-color: variables.$bg-babyblue;
+    border-radius: variables.$radius-md;
+    color: variables.$bg-white;
+    font-size: variables.$text-sm;
+    font-family: variables.$font-arial;
     margin-bottom: 14px;
     padding: 14px 50px;
     text-decoration: none;
     border: none;
 
     &:hover {
-        background-color: $bg-darkblue;
+        background-color: variables.$bg-darkblue;
     }
 }
 
