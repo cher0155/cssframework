@@ -4,7 +4,7 @@
 @use 'border';
 
 body {
-    background-color: colours.$bg-purple;
+    background-color: colours.$bg-lightpurple;
     font-family: fonts.$font-arial;
     font-size: fonts.$text-reg;
     margin: 0;
@@ -18,13 +18,13 @@ h1 {
 }
 
 div#black-box{
-    background-color: colours.$bg-purple;
+    background-color: colours.$bg-lightpurple;
     font-size: fonts.$text-sm;
     color: colours.$bg-white;
 }
 
 .black-flag {
-    background-color: colours.$bg-purple;
+    background-color: colours.$bg-lightpurple;
     color: colours.$bg-white;
 }
 
