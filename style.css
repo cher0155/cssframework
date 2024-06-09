@@ -1,77 +1,50 @@
 /* Import the partials */
 /* General body styles */
 body {
-  background-color: #b98dc4;
+  background-color: #9095f3;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   margin: 0;
-  padding: 60px;
+}
+
+.container {
+  margin: 24px;
+  padding: 20px;
 }
 
 /* Heading styles */
 h1 {
-  font-size: 66px;
+  font-size: 70px;
   font-weight: 900;
-  font-family: "Times New Roman", Times, serif;
 }
 
 h2 {
-  font-size: 66px;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 66px;
+  font-size: 50px;
+  font-weight: 500;
 }
 
 h4 {
-  font-size: 66px;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 h5 {
-  font-size: 66px;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 /* Paragraph styles */
 p {
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 16px;
 }
 
 /* Button mixin */
-/* Button class */
-.btn {
-  display: inline-block;
-  background-color: #bbdeff;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 14px;
-  padding: 14px 50px;
-  text-decoration: none;
-  border: none;
-}
-.btn:hover {
-  background-color: #022D68;
-}
-
-/* Specific button ID */
-#submit {
-  display: inline-block;
-  background-color: #bbdeff;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 14px;
-  padding: 14px 50px;
-  text-decoration: none;
-  border: none;
-}
-#submit:hover {
-  background-color: #022D68;
-}
-
 /* Additional styles for elements like tables, lists, etc. */
 ul, ol {
   margin-bottom: 16px;
@@ -87,6 +60,12 @@ ol {
   list-style-type: upper-roman;
 }
 
+a {
+  color: #a06666;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -99,12 +78,16 @@ table, th, td {
 }
 
 th {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 hr {
   margin: 24px;
   border: 1px dashed #000;
+}
+
+form {
+  margin-bottom: 16px;
 }
 
 blockquote {
@@ -113,22 +96,32 @@ blockquote {
   padding: 35px;
 }
 
-.btn btn-primary {
+.btn-primary {
   background-color: #022D68;
-  color: #fff;
+  color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.btn btn-secondary {
-  background-color: #b98dc4;
+.btn-secondary {
+  background-color: #96c2eb;
   color: #022D68;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.btn btn-success {
-  background-color: #00FF00;
-  color: #fff;
+.btn-success {
+  background-color: #a4e2a4;
+  color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
 }
 
-.btn btn-danger {
-  background-color: #FF0000;
-  color: #fff;
-}/*# sourceMappingURL=main.css.map */
+.btn-danger {
+  background-color: #a06666;
+  color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

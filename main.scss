@@ -7,38 +7,44 @@
 body {
     background-color: colours.$bg-lightpurple;
     font-family: fonts.$font-arial;
-    font-size: fonts.$text-reg;
+    font-size: fonts.$text-sm;
     margin: 0;
-    padding: 60px;
+    
 }
+.container{
+    margin: layouts.$margin-medium;
+    padding: layouts.$padding-small;
 
+}
 /* Heading styles */
 h1 {
     font-size: fonts.$text-lg;
-    font-weight: 900;
-    font-family: fonts.$font-times;
+    font-weight: fonts.$font-weight-lg;
+
 }
 
 h2 {
-    font-size: fonts.$text-lg;
+    font-size: fonts.$text-md;
+    font-weight: fonts.$font-weight-md;
 }
 
 h3 {
-    font-size: fonts.$text-lg;
+    font-size: fonts.$text-reg;
+    font-weight: fonts.$font-weight-reg;
 }
 
 h4 {
-    font-size: fonts.$text-lg;
+    font-size: fonts.$text-sm;
+    font-weight: fonts.$font-weight-sm;
 }
-
-h5 {
-    font-size: fonts.$text-lg;
+h5{
+    font-size: fonts.$text-xs;
+    font-weight: fonts.$font-weight-xs;
 }
-
 /* Paragraph styles */
 p {
     font-size: fonts.$text-sm;
-    margin-bottom: 16px;
+    margin-bottom: layouts.$margin-btm;
 }
 
 /* Button mixin */
@@ -50,29 +56,21 @@ p {
     font-size: fonts.$text-sm;
     font-family: fonts.$font-arial;
     margin-bottom: 14px;
-    padding: 14px 50px;
+    padding: layouts.$padding-left;
     text-decoration: none;
-    border: none;
+    border: layouts.$border-dash;
 
     &:hover {
         background-color: colours.$bg-darkblue;
     }
 }
 
-/* Button class */
-.btn {
-    @include btn;
-}
 
-/* Specific button ID */
-#submit {
-    @include btn;
-}
 
 /* Additional styles for elements like tables, lists, etc. */
 ul, ol {
     margin-bottom: layouts.$margin-btm;
-    font-size: fonts.$text-reg;
+    font-size: fonts.$text-sm;
     padding-left: layouts.$padding-left;
 }
 ul {
@@ -82,7 +80,12 @@ ul {
 ol {
     list-style-type: layouts.$roman-list;
 }
-
+ a{
+    color: colours.$bg-red;
+    cursor: pointer;
+    font-size: fonts.$text-sm;
+ 
+ }
 
 table {
     width: 100%;
@@ -96,6 +99,7 @@ table, th, td {
 }
 
 th {
+
     background-color: colours.$bg-white;
 }
 
@@ -103,28 +107,38 @@ hr {
     margin: layouts.$margin-medium;
     border: layouts.$border-dash;
 }
-
+form {
+    margin-bottom: layouts.$margin-btm;
+}
 blockquote {
     font-family: fonts.$font-times;
     margin: layouts.$margin-medium;
     padding: layouts.$padding-medium;
 }
 
-.btn btn-primary {
+.btn-primary {
     background-color: colours.$bg-darkblue;
     color: colours.$bg-white;
+    padding: layouts.$padding-small;
+    cursor: pointer;
 }
 
-.btn btn-secondary {
-    background-color: colours.$bg-lightpurple;
+.btn-secondary {
+    background-color: colours.$bg-babyblue;
     color: colours.$bg-darkblue;
+    padding: layouts.$padding-small;
+    cursor: pointer;
 }
 
-.btn btn-success {
+.btn-success {
     background-color: colours.$bg-green;
     color: colours.$bg-white;
+    padding: layouts.$padding-small;
+    cursor: pointer;
 }
-.btn btn-danger {
+.btn-danger {
     background-color: colours.$bg-red;
     color: colours.$bg-white;
+    padding: layouts.$padding-small;
+    cursor: pointer;
 }
