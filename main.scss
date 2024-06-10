@@ -2,6 +2,7 @@
 @use 'colours';
 @use 'fonts';
 @use 'layouts';
+@use 'utility';
 
 /* General body styles */
 body {
@@ -14,6 +15,7 @@ body {
 .container{
     margin: layouts.$margin-medium;
     padding: layouts.$padding-small;
+    background-color: colours.$bg-pink;
 
 }
 /* Heading styles */
@@ -45,10 +47,11 @@ h5{
 p {
     font-size: fonts.$text-sm;
     margin-bottom: layouts.$margin-btm;
+    color: colours.$text-darkblue;
 }
 
 /* Button mixin */
-@mixin btn {
+.btn {
     display: inline-block;
     background-color: colours.$bg-babyblue;
     border-radius: layouts.$radius-md;
@@ -61,7 +64,7 @@ p {
     border: layouts.$border-dash;
 
     &:hover {
-        background-color: colours.$bg-darkblue;
+        background-color: colours.$bg-purple;
     }
 }
 
@@ -71,7 +74,7 @@ p {
 ul, ol {
     margin-bottom: layouts.$margin-btm;
     font-size: fonts.$text-sm;
-    padding-left: layouts.$padding-left;
+    padding: layouts.$padding-medium;
 }
 ul {
     list-style-type: layouts.$circle-list;
@@ -86,6 +89,24 @@ ol {
     font-size: fonts.$text-sm;
  
  }
+form {
+    margin-bottom: layouts.$margin-btm;
+    background-color: colours.$bg-white;
+}
+form input {
+    padding: layouts.$padding-small;
+    font-size: fonts.$text-sm;
+    border: layouts.$border-solid;
+    border-radius: layouts.$radius-sm;
+}
+form textarea {
+    
+    padding: layouts.$padding-small;
+    font-size: fonts.$text-sm;
+    border: layouts.$border-solid;
+    border-radius: layouts.$radius-sm;
+}
+
 
 table {
     width: 100%;
@@ -112,6 +133,8 @@ form {
 }
 blockquote {
     font-family: fonts.$font-times;
+    font-size: fonts.$text-sm;
+    font-style: fonts.$font-style-italic;
     margin: layouts.$margin-medium;
     padding: layouts.$padding-medium;
 }

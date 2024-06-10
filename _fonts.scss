@@ -7,12 +7,17 @@ $font-times: 'Times New Roman', Times, serif;
 $text-lg: 70px;
 $text-md: 60px;
 $text-reg: 50px;
-$text-sm: 25px;
-$text-xs: 24px;
+$text-sm: 24px;
+$text-xs: 18px;
 
 // font-weight
 $font-weight-lg: 900;
 $font-weight-md: 700;
-$font-weight-reg: 500;
+$font-weight-reg: 550;
 $font-weight-sm: 400;
-$font-weight-xs: 200;
+$font-weight-xs: 100;
+
+// font-style
+$font-style-italic: italic;
+$font-style-normal: normal;
+$font-style-oblique: oblique;

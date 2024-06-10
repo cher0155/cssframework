@@ -1,0 +1,18 @@
+// utility classes
+
+@mixin text-center {
+    text-align: center;
+}
+@mixin margin($size) {
+    margin: $size;
+}
+
+.text-center {
+    @include text-center;
+}
+.m-1{
+    @include margin(20px);
+}
+.m-2{
+    @include margin(40px);
+}
